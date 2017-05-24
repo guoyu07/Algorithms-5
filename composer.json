@@ -1,0 +1,10 @@
+{
+    "name": "will/Algorithm",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

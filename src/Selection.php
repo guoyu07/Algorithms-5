@@ -1,6 +1,4 @@
 <?php
-namespace Algorithm;
-
 class Selection extends BaseSort
 {
     function sort()

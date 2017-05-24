@@ -1,9 +1,4 @@
 <?php
-
-/**
- * Time: 2017/5/24 上午8:21
- */
-namespace Algorithm;
 abstract class BaseSort
 {
     protected $unsorted;

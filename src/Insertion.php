@@ -1,5 +1,4 @@
 <?php
-namespace Algorithm;
 class Insertion extends BaseSort
 {
     function sort()
