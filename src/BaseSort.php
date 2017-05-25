@@ -6,6 +6,7 @@ abstract class BaseSort
 
     const INSERTION = 'Insertion';
     const SELECTION = 'Selection';
+    const BUBBLE = 'Bubble';
 
     /**
      * @param $algorithm
@@ -19,7 +20,11 @@ abstract class BaseSort
                 break;
             case self::SELECTION:
                 return new Selection();
+            case self::BUBBLE:
+                return new Bubble();
         }
+
+        return null;
     }
 
     public function setUnsorted($unsorted)
