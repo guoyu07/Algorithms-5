@@ -27,6 +27,17 @@ abstract class BaseSort
         return null;
     }
 
+    /**
+     * @param $key1
+     * @param $key2
+     */
+    protected function exchange( $key1, $key2 )
+    {
+        $tmp = $this->unsorted[$key1];
+        $this->unsorted[$key1] = $this->unsorted[$key2];
+        $this->unsorted[$key2] = $tmp;
+    }
+
     public function setUnsorted($unsorted)
     {
         $this->unsorted = $unsorted;

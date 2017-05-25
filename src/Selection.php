@@ -12,9 +12,7 @@ class Selection extends BaseSort
             }
 
             // exchange
-            $tmp = $this->unsorted[$i];
-            $this->unsorted[$i] = $this->unsorted[$min];
-            $this->unsorted[$min] = $tmp;
+            $this->exchange($i, $min);
         }
 
         $this->sorted = $this->unsorted;

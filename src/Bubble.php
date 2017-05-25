@@ -17,9 +17,7 @@ class Bubble extends BaseSort
 
             for ( $i = 0; $i < $total-1; $i++ ) {
                 if ( $this->unsorted[$i] > $this->unsorted[$i+1] ) {
-                    $tmp = $this->unsorted[$i];
-                    $this->unsorted[$i] = $this->unsorted[$i+1];
-                    $this->unsorted[$i+1] = $tmp;
+                    $this->exchange( $i, $i+1 );
                     $swapped = true;
                 }
             }

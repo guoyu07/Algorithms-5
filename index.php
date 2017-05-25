@@ -5,7 +5,7 @@ $arr = range(1,1000);
 shuffle($arr);
 $total = count($arr);
 
-$algorithm = BaseSort::getInstance(BaseSort::BUBBLE);
+$algorithm = BaseSort::getInstance(BaseSort::SELECTION);
 $algorithm->setUnsorted($arr);
 $algorithm->sort();
 $sorted = $algorithm->getSorted();
