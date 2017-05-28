@@ -1,11 +1,11 @@
 <?php
 require './vendor/autoload.php';
 
-$arr = range(1,1000);
+$arr = range(1,100);
 shuffle($arr);
 $total = count($arr);
 
-$algorithm = BaseSort::getInstance(BaseSort::SELECTION);
+$algorithm = BaseSort::getInstance( BaseSort::MERGE );
 $algorithm->setUnsorted($arr);
 $algorithm->sort();
 $sorted = $algorithm->getSorted();

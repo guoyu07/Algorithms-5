@@ -7,6 +7,7 @@ abstract class BaseSort
     const INSERTION = 'Insertion';
     const SELECTION = 'Selection';
     const BUBBLE = 'Bubble';
+    const MERGE = 'Merge';
 
     /**
      * @param $algorithm
@@ -22,6 +23,8 @@ abstract class BaseSort
                 return new Selection();
             case self::BUBBLE:
                 return new Bubble();
+            case self::MERGE:
+                return new Merge();
         }
 
         return null;
