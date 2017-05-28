@@ -5,7 +5,7 @@ $arr = range(1,100);
 shuffle($arr);
 $total = count($arr);
 
-$algorithm = BaseSort::getInstance( BaseSort::MERGE );
+$algorithm = BaseSort::getInstance( BaseSort::QUICK );
 $algorithm->setUnsorted($arr);
 $algorithm->sort();
 $sorted = $algorithm->getSorted();

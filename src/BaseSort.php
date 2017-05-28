@@ -8,26 +8,14 @@ abstract class BaseSort
     const SELECTION = 'Selection';
     const BUBBLE = 'Bubble';
     const MERGE = 'Merge';
-
+    const QUICK = 'Quick';
     /**
      * @param $algorithm
      * @return BaseSort
      */
     public static function getInstance($algorithm)
     {
-        switch ($algorithm) {
-            case self::INSERTION:
-                return new Insertion();
-                break;
-            case self::SELECTION:
-                return new Selection();
-            case self::BUBBLE:
-                return new Bubble();
-            case self::MERGE:
-                return new Merge();
-        }
-
-        return null;
+        return new $algorithm();
     }
 
     /**

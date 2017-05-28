@@ -29,7 +29,7 @@ class Merge extends BaseSort
 		$this->sorted = $sort( $this->unsorted );
 	}
 
-	public function doMerge( $left, $right )
+	private function doMerge( $left, $right )
 	{
 		$result = [];
 
