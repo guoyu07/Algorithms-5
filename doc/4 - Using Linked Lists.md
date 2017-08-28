@@ -8,7 +8,7 @@ We know a lot about arrays already. Now, we are going to shift our focus to a ne
 
 A linked list is a collection of objects known as nodes. Each node is connected to the next node with alink, which is nothing but an object reference. If we consider the following image, each box represents anode. The arrow indicates the link between the nodes. This is an example of a singly linked list. The lastnode contains the next link of a NULL, so that it marks the end of the list:
 
-![4.1 linked list](images/4.1 linked list.png)
+![4.1 linked list](./images/1.png)
 
 A node is an object, meaning it can store any data type as simple as a string, integer, or float, or complex,such as an array, array of arrays, objects, or object arrays. We can store anything as per our need.
 
@@ -151,7 +151,7 @@ So far, we have dealt with the kind of list known as a singly linked list, or li
 
 In a doubly linked list, there are two links on each node: one to point to the next node and another one tothe previous node. Where the singly linked list is unidirectional, the doubly linked list is bidirectional.We can move forward or backward in the list without any problem. The following image shows a sampledoubly linked list. Later, in the Implementing a doubly linked list in PHP section, we will explore how to implement a doubly linked list:
 
-![doubly linked list](images/doubly linked list.png)
+![doubly linked list](./images/4.png)
 
 
 
@@ -159,13 +159,13 @@ In a doubly linked list, there are two links on each node: one to point to the n
 
 In a singly or doubly linked list, there is no node after the last node, so the last node does not have anysubsequent node to iterate on. If we allow the last node to point to the first node, we are making a circle.Such linked lists are known as circular linked lists. We can have both singly and doubly linked lists ascircular linked lists. We will also implement a circular linked list in this chapter. The following image depicts a circular linked list:
 
-![circular linked list](images/circular linked list.png)
+![circular linked list](./images/2.png)
 
 ### Multi-linked lists
 
 A multi-linked list, or multiply linked list, is a special type of linked list that has two or more links linkingeach node to another node. It can grow multi-directionally based on the purpose of the linked list. Forexample, if we take the example of a list of students with each student being a node with the properties ofname, age, gender, department, major, and so on, then we can link each student's node not only with thenext and previous nodes, but also with age, gender, department, and major. Though the usage of such alinked list requires a good understanding of the linked list concept, we can use such special linked listswhenever we need. The following image depicts a multi-linked list:
 
-![multi-linked list](images/multi-linked list.png)
+![multi-linked list](./images/6.png)
 
 
 
@@ -229,7 +229,7 @@ This process is similar to the first operation that we looked at. The main diffe
 
 
 
-![inserting before a specific node](images/inserting before a specific node.png)
+![inserting before a specific node](./images/5.png)
 
 
 
@@ -290,7 +290,7 @@ public function insertAfter(string $data = NULL, string $query = NULL)
 
 Deleting a node simply means taking out the node and rearranging the previous and subsequent node links.If we just remove a node and connect the previous node's next link with the node following the deletednode, we are done with the delete operation. Just have a look at the following example:
 
-![deleting node](images/deleting node.png)
+![deleting node](./images/3.png)
 
 When we delete the first node, we just have to make the second node our head or first node. We canachieve that very easily by using the following code:
 
