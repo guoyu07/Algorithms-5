@@ -812,9 +812,7 @@ public function displayBackward()
 }
 ````
 
-
-
-##Complexity for doubly linked lists
+## Complexity for doubly linked lists
 
 Here is the best, worst, and average-case complexity for doubly linked list operations. It is similar to thatof singly linked list operations:
 
@@ -825,7 +823,7 @@ Here is the best, worst, and average-case complexity for doubly linked list oper
 | Search                     | O(n)                        | O(n)                          |
 | Access                     | O(n)                        | O(n)                          |
 
-##Using PHP SplDoublyLinkedList
+## Using PHP SplDoublyLinkedList
 
 The PHP Standard PHP Library (SPL) has an implementation of a doubly linked list, which is known asSplDoublyLinkedList. If we are using the built-in class, we do not need to implement the doubly linked listourselves. The doubly linked list implementation actually works as a stack and queue as well. The PHPimplementation of the doubly linked list has lots of additional functionalities. Here are some of thecommon features of SplDoublyLinkedList:
 
@@ -879,8 +877,6 @@ Programming Intelligence
 Mediawiki Administrative tutorial guide
 ````
 
-
-
-##Summary
+## Summary
 
 The linked list is one of the most popular data structures that are used to solve different problems.Whether it's regarding for a stack, queue, priority queue, or for implementing complex graph algorithms,the linked list is a very handy data structure to solve any problems you might find. In this chapter, weexplored all possible details regarding the singly linked list, doubly linked list, and circular linked list,along with their complexity analysis. In the upcoming chapters, we will utilize linked lists to implementdifferent data structures and writing algorithms.
